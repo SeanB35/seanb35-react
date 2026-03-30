@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
 import usePageStyle from '../components/usePageStyle';
-import '../styles/inventory.css';
+import inventoryCss from '../styles/inventory.css?raw';
 
 const INVENTORY_BODY_CSS = `
 body {
@@ -14,7 +14,7 @@ body {
 
 function Inventory() {
   useDocumentTitle('Super Beaver | Inventory');
-  usePageStyle('inventory', INVENTORY_BODY_CSS);
+  usePageStyle('inventory', INVENTORY_BODY_CSS + '\n' + inventoryCss);
 
 
   return (

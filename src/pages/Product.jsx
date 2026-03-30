@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
 import usePageStyle from '../components/usePageStyle';
-import '../styles/product.css';
+import productCss from '../styles/product.css?raw';
 
 const PRODUCT_BODY_CSS = `
 body {
@@ -14,7 +14,7 @@ body {
 
 function Product() {
   useDocumentTitle('Super Beaver | Premium Logs');
-  usePageStyle('product', PRODUCT_BODY_CSS);
+  usePageStyle('product', PRODUCT_BODY_CSS + '\n' + productCss);
 
 
   return (

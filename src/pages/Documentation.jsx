@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
 import usePageStyle from '../components/usePageStyle';
-import '../styles/documentation.css';
+import documentationCss from '../styles/documentation.css?raw';
 
 const DOCS_BODY_CSS = `
 body {
@@ -15,7 +15,7 @@ body {
 
 function Documentation() {
   useDocumentTitle('Super Beaver | Dam Construction Manual');
-  usePageStyle('documentation', DOCS_BODY_CSS);
+  usePageStyle('documentation', DOCS_BODY_CSS + '\n' + documentationCss);
 
 
   return (

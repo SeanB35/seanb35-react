@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
 import usePageStyle from '../components/usePageStyle';
-import '../styles/cards.css';
+import cardsCss from '../styles/cards.css?raw';
 
 const CARDS_BODY_CSS = `
 body {
@@ -15,7 +15,7 @@ body {
 
 function Cards() {
   useDocumentTitle('Super Beaver | Trading Cards');
-  usePageStyle('cards', CARDS_BODY_CSS);
+  usePageStyle('cards', CARDS_BODY_CSS + '\n' + cardsCss);
 
 
   return (

@@ -1,6 +1,6 @@
 /* body styles removed — injected via usePageStyle in Inventory.jsx */
 
-h1 {
+.inventory-page h1 {
     text-align: center;
     color: #3e2723;
     margin-bottom: 30px;

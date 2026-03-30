@@ -1,9 +1,11 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
-import '../styles/intro_form.css';
+import usePageStyle from '../components/usePageStyle';
+import introFormCss from '../styles/intro_form.css?raw';
 
 function IntroForm() {
   useDocumentTitle('Sean D. Briganti | Introduction Form');
+  usePageStyle('intro-form', introFormCss);
 
   return (
     <main>

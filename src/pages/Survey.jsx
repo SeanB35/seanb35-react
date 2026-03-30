@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocumentTitle from '../components/useDocumentTitle';
 import usePageStyle from '../components/usePageStyle';
-import '../styles/survey.css';
+import surveyCss from '../styles/survey.css?raw';
 
 const SURVEY_BODY_CSS = `
 body {
@@ -18,7 +18,7 @@ body {
 
 function Survey() {
   useDocumentTitle('Super Beaver | Survey');
-  usePageStyle('survey', SURVEY_BODY_CSS);
+  usePageStyle('survey', SURVEY_BODY_CSS + '\n' + surveyCss);
 
   return (
     <main>
