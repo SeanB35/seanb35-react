@@ -1,0 +1,25 @@
+/* Minimal reset — all visual styling is handled by the dynamically loaded
+   theme (root.css or itis.css) via ThemeLoader.  This file ONLY provides the
+   bare-minimum defaults that keep the React #root wrapper from breaking layout. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* #root must mirror whatever layout body uses so that header/main/footer
+   children are positioned identically to the static site (where they are
+   direct children of body, not wrapped in an extra div). */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  /* Inherit body's flex layout so children center the same way */
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+}
