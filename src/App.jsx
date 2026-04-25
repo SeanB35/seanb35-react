@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -48,6 +48,7 @@ import WebsiteEvaluations from './pages/WebsiteEvaluations';
 import Hobby from './pages/Hobby';
 import SeanBDesigns from './pages/SeanBDesigns';
 import CrappyPage from './pages/CrappyPage';
+import Slideshow from './pages/Slideshow';
 
 // Import Global Styles removed in favor of dynamic link in ThemeLoader
 // import './styles/default.css';
@@ -73,6 +74,7 @@ function App() {
         <Route path="/itis3135/hobby" element={<Hobby />} />
         <Route path="/itis3135/intro-form" element={<IntroForm />} />
         <Route path="/itis3135/crappy-page" element={<CrappyPage />} />
+        <Route path="/itis3135/slideshow" element={<Slideshow />} />
         
         <Route path="/seanbdesigns" element={<SeanBDesigns />} />
       </Routes>
@@ -82,3 +84,4 @@ function App() {
 }
 
 export default App;
+

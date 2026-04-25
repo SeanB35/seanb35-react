@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
@@ -28,7 +28,8 @@ function Navbar() {
         <Link to="/itis3135/product">Product</Link>{" "}
         <Link to="/itis3135/website-evaluations">Website Evaluations</Link>{" "}
         <Link to="/itis3135/hobby">Hobby</Link>{" "}
-        <Link to="/itis3135/intro-form">Intro Form</Link>
+        <Link to="/itis3135/intro-form">Intro Form</Link>{" "}
+        <Link to="/itis3135/slideshow">Slideshow</Link>
       </nav>
       <hr className="divider" />
       {isRoot && (
@@ -41,3 +42,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
